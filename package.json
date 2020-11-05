@@ -1,0 +1,29 @@
+{
+  "name": "back-stargate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MacLikorne:megabite121089@github.com/MacLikorne/back-stargate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MacLikorne/back-stargate/issues"
+  },
+  "homepage": "https://github.com/MacLikorne/back-stargate#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
