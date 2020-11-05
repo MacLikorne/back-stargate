@@ -1,13 +1,15 @@
 const getDirection = (gate, ticket) => {
-    let direction = "OK"
+    let direction = ""
     let gates = ['A', 'B', 'C', 'D']
     if (gates.includes(gate) && gates.includes(ticket)) {
-        if (gate.charCodeAt(0) - ticket.charCodeAt(0) === 1) {
-            direction = "Prochaine porte à gauche."
+        if (gate === ticket) {
+            direction = "OK"
         }
-        else if (gate.charCodeAt(0) - ticket.charCodeAt(0) === -1) {
+        else if (ticket === gates[gates.indexOf(gate) + 1] || ticket === gates[0]) {
             direction = "Prochaine porte à droite."
-
+        }
+        else if (ticket === gates[gates.indexOf(gate) - 1] || ticket === gates[gates.length - 1]) {
+            direction = "Prochaine porte à gauche."
         }
         else {
             direction = "Deuxième porte à gauche."
