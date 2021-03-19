@@ -1,0 +1,11 @@
+---
+application:
+  name: "back-stargate"
+  project: "Front full"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-back-stargate"
+  routes:
+  - application_name: "back-stargate"
+    paths:
+    - "/*"
